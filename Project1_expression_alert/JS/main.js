@@ -27,9 +27,7 @@ if (userString !== null && userString !== "") {
     }
   });
 
-  // Append the button to the body
   document.body.appendChild(button);
 } else {
-  // If the user cancels the prompt or enters an empty string, display a message
   window.alert("No custom string entered. Run the script again and enter a valid string.");
 }
