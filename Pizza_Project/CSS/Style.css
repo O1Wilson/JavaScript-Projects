@@ -22,6 +22,12 @@
 	float:left;
 }
 
+.center {
+	width:200px;
+	height:200px;
+	float:left;
+}
+
 .right {
 	width:200px;
 	height:190px;
