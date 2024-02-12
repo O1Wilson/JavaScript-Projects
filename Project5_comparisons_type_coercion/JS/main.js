@@ -1,5 +1,5 @@
 var myVariable = 42;
-document.write("The data type of myVariable is: " + typeof myVariable);
+document.write("The data type of myVariable is: " + myVariable);
 
 document.write("Infinity:" + (2E310) + "<br>");
 document.write("Negative Infinity: " + (-3E310) + "<br>");
