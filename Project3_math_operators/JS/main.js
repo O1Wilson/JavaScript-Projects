@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("Math").innerHTML = "1 plus 2, multiplied by 10, divided in half and then subtracted by 5 equals " + simple_Math;
     }
 
-    function modulus_Operatior() {
+    function modulus_Operator() {
         var simple_Math = 25 % 6;
         document.getElementById("Math").innerHTML = "When you divide 25 by 6 you have a remainder of: " + simple_Math;
     }
@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("Math").innerHTML = -x;
     }
 
+    function Time_function() {
+        var currentTime = new Date();
+        console.log("Current time: " + currentTime);
+    }
+
     var X = 5;
     X++;
     document.write(X);
@@ -42,4 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var Y = 5.25;
     Y--;
     document.write(Y);
+
+    // Calling the function without the error
+    Time_function();
 });
