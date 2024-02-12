@@ -24,30 +24,28 @@ function placeXOrO(squareNumber) {
 		
 		audio('./media/place.mp3');
 		
-		if (activePlayer === '0') {
-			disableClick();
-			setTimeout(function () { computersTurn(); }, 1000);
-		}
+		if (activePlayer === 'O') {
+		disableClick();
+		setTimeout(function () { computersTurn(); }, 1000);
+	}
 		
 		return true;
 	}
 	
 	function computersTurn() {
-		
 		let success = false;
 		let pickASquare;
-		
+
 		while (!success) {
 			pickASquare = String(Math.floor(Math.random() * 9));
-			
+
 			if (placeXOrO(pickASquare)) {
-				placeXOrO(pickASquare);
-				
 				success = true;
-			};
+			}
 		}
 	}
 }
+
 	
 	function checkWinConditions() {
 		if (arrayIncludes('0X', '1X', '2X')) { drawWinLine(50, 100, 558, 100) }
