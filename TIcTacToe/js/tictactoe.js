@@ -31,6 +31,22 @@ function placeXOrO(squareNumber) {
 		
 		return true;
 	}
+	
+	function computersTurn() {
+		
+		let success = false;
+		let pickASquare;
+		
+		while (!success) {
+			pickASquare = String(Math.floor(Math.random() * 9));
+			
+			if (placeXOrO(pickASquare)) {
+				placeXOrO(pickASquare);
+				
+				success = true;
+			};
+		}
+	}
 }
 	
 	function checkWinConditions() {
@@ -77,22 +93,6 @@ function placeXOrO(squareNumber) {
 			const c = selectedSquares.includes(squareC);
 			
 			if (a === true && b === true && c === true) { return true; }
-		}
-	}
-		
-	function computersTurn() {
-		
-		let success = false;
-		let pickASquare;
-		
-		while (!success) {
-			pickASquare = String(Math.floor(Math.random() * 9));
-			
-			if (placeXOrO(pickASquare)) {
-				placeXOrO(pickASquare);
-				
-				success = true;
-			};
 		}
 	}
 	
