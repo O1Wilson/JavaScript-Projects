@@ -4,10 +4,10 @@ var myDictionary = {
     key3: "Value 3",
 };
 delete myDictionary.key3
-document.getElementById("dictionary").innerHTML = myDictionary.key3
 
 function displayDictionaryValue() {
     var keyToDisplay = "key2"; 
+	document.getElementById("dictionary").innerHTML = myDictionary.key3
 
     var valueToDisplay = myDictionary[keyToDisplay];
 
