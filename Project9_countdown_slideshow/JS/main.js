@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-
 function countdown() {
 	var seconds = document.getElementById("seconds").value;
 	
@@ -59,4 +57,3 @@ document.querySelector(".prev").addEventListener("click", function () {
       currentSlide(i + 1);
     });
   }
-});
